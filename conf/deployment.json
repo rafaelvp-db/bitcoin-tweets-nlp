@@ -1,0 +1,32 @@
+{
+    "default": {
+      "jobs": [
+        {
+          "name": "feature_engineering",
+          "new_cluster": {
+              "spark_version": "11.0.x-cpu-ml-scala2.12",
+              "num_workers": 5,
+              "node_type_id": "i3.xlarge",
+              "aws_attributes": {
+                "availability": "ON_DEMAND"
+            }
+          },
+          "spark_python_task": {
+            "name": "feature_engineering",
+            "python_file": "file://bitcoin_tweets_nlp/jobs/feature_engineering/entrypoint.py",
+            "parameters": [
+              "--conf-file",
+              "file://conf/config.json"
+            ],
+            "libraries": [
+              {
+                "pypi": {
+                  "package": "torch transformers datasets"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }

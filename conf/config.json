@@ -1,0 +1,8 @@
+{
+    "db_name": "bitcointweetdb",
+    "run_name": "bitcoin_tweet_sent_bert",
+    "experiment_name": "bitcoin_tweet_sentiment",
+    "model_name": "sent_bert",
+    "backbone_model": "rabindralamsal/BERTsent",
+    "tokenizer": "vinai/bertweet-covid19-base-cased"
+}

@@ -1,0 +1,9 @@
+{
+    "environments": {
+        "default": {
+            "profile": "test",
+            "workspace_dir": "/Shared/dbx/projects/bitcoin-tweets-nlp",
+            "artifact_location": "dbfs:/dbx/bitcoin-tweets-nlp"
+        }
+    }
+}

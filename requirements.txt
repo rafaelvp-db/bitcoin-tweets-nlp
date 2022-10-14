@@ -1,0 +1,8 @@
+dbx
+torch
+transformers
+datasets
+pytest
+black
+flake8
+pyspark==3.2.1
